@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.4s;
+}
+
+a {
+    all: unset;
+}
+
+body {
+    height: 100vh;
+    font-family: monospace;
+    background-color: black;
+}
+
+.topContainer {
+    display: flex;
+    color: white;
+    background-image: url("https://wallpaperaccess.com/full/4571136.jpg");
+    height: 100vh;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: salmon;
+    width: 100vw;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.navbar.active {
+    box-shadow: 1px 1px 10px 1px white;
+}
+
+.navLinks {
+    display: flex;
+    column-gap: 2.5rem;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.link {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 3px;
+    text-decoration-color: transparent;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration-color: white;
+    transition: 0.4s;
+}
+
+.bottomContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: aqua;
+    margin-top: 50px;
+}
+
+.bottomContainer p {
+    padding: 2rem;
+    text-align: center;
+}
